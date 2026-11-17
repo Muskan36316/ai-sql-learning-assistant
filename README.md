@@ -5,7 +5,7 @@ An AI-powered SQL learning application built with Python, Streamlit, MySQL, and 
 
 ## 🚀 Live Application
 
-**Live Demo:**(https://ai-sql-learning-assistant-qhanwjwmrtd5zjjkneyysb.streamlit.app/).
+[🌐 Open AI SQL Learning Assistant](https://ai-sql-learning-assistant-qhanwjwmrtd5zjjkneyysb.streamlit.app/)
 
 ## ✨ Features
 
