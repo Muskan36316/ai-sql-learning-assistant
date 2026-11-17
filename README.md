@@ -10,6 +10,22 @@ An AI-powered SQL learning application built with Python, Streamlit, MySQL, and 
 ## 📸 Application Screenshot
 
 ![AI SQL Learning Assistant Dashboard](DashBoard.png)
+## 🗄️ MySQL Database – Student Management
+
+### Student Dashboard
+![MySQL Dashboard](MySQL_Dashboard.png)
+
+### Add New Student
+![Add Student](Add_Student.png)
+
+### Update or Delete Student
+![Student Management](Student_Management_Form.png)
+
+## 📊 Query Results
+![Query Results](Query_Results.png)
+
+## 🕒 Query History
+![Query History](Query_History.png)
 
 ## ✨ Features
 
