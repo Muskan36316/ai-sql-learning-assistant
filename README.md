@@ -7,6 +7,10 @@ An AI-powered SQL learning application built with Python, Streamlit, MySQL, and 
 
 [🌐 Open AI SQL Learning Assistant](https://ai-sql-learning-assistant-qhanwjwmrtd5zjjkneyysb.streamlit.app/)
 
+## 📸 Application Screenshot
+
+![AI SQL Learning Assistant Dashboard](DashBoard.png)
+
 ## ✨ Features
 
 - **AI SQL Generator:** Converts natural-language questions into SQL queries.
