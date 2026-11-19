@@ -47,6 +47,13 @@ def get_connection():
             connection_timeout=30
         )
 
+         # Set MySQL session timezone to India
+        cursor = connection.cursor()
+        cursor.execute("SET time_zone = '+05:30'")
+        cursor.close()
+
+        return connection
+
     except Exception:
         os.unlink(ca_file.name)
         raise
