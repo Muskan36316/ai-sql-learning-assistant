@@ -19,6 +19,7 @@ def get_setting(name, default=None):
     return os.getenv(name, default)
 
 
+
 def get_connection():
     ca_content = get_setting("DB_SSL_CA")
 
@@ -36,18 +37,18 @@ def get_connection():
         ca_file.write(ca_content.strip() + "\n")
         ca_file.close()
 
-        return mysql.connector.connect(
-            host=get_setting("DB_HOST","mysql-2b823613-ai-sql-learning-assistant.d.aivencloud.com"),
-            port=int(get_setting("DB_PORT", "23926")),
-            user=get_setting("DB_USER","avnadmin"),
-            password=get_setting("DB_PASSWORD"),
-            database=get_setting("DB_NAME", "defaultdb"),
-            ssl_ca=ca_file.name,
-            ssl_verify_cert=True,
-            connection_timeout=30
-        )
+        connection = mysql.connector.connect(
+           host=get_setting("DB_HOST","mysql-2b823613-ai-sql-learning-assistant.d.aivencloud.com"),
+           port=int(get_setting("DB_PORT", "23926")),
+           user=get_setting("DB_USER","avnadmin"),
+           password=get_setting("DB_PASSWORD"),
+           database=get_setting("DB_NAME", "defaultdb"),
+           ssl_ca=ca_file.name,
+           ssl_verify_cert=True,
+           connection_timeout=30
+           )
 
-         # Set MySQL session timezone to India
+        # Set MySQL session timezone to India
         cursor = connection.cursor()
         cursor.execute("SET time_zone = '+05:30'")
         cursor.close()
