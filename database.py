@@ -40,7 +40,7 @@ def get_connection():
             host=get_setting("DB_HOST","mysql-2b823613-ai-sql-learning-assistant.d.aivencloud.com"),
             port=int(get_setting("DB_PORT", "23926")),
             user=get_setting("DB_USER","avnadmin"),
-            password=get_setting("DB_PASSWORD","***REMOVED***"),
+            password=get_setting("DB_PASSWORD"),
             database=get_setting("DB_NAME", "defaultdb"),
             ssl_ca=ca_file.name,
             ssl_verify_cert=True,
